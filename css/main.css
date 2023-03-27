@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:darksalmon;
+    font-family: cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    color:springgreen;
+    min-height: 100vh;
+    text-shadow: 5px 3px 1px rgba(139,57,233,0.68);
+}
+
+/* .wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.item{
+    background-color: aquamarine;
+    flex-basis: 25%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+.item:hover{
+    flex-basis: 100%;
+}
+
+.item1{
+    background-image: url("https://api.lorem.space/image/shoes?hash=gm99jqnn");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.item2{
+    background-image: url("https://api.lorem.space/image/shoes?hash=e7z5lf4r");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.item3{
+    background-image: url("https://api.lorem.space/image/shoes?hash=xonpdhh5");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.item4{
+    background-image: url("https://api.lorem.space/image/shoes?hash=cnjahro3");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 800px){
+    .slider{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+    }
+}
+
